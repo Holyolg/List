@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import Chart from "./components/Chart/chart";
 import AppFilter from "./components/app-filter/app-filter";
 import AppInfo from "./components/app-info/app-info";
 import EmployeesAddForm from "./components/employees-add-form/employees-add-form";
@@ -88,12 +89,10 @@ function App() {
 	return (
 		<div className="app">
 			<AppInfo employeesNum={employeesNum} increased={increased}></AppInfo>
-
 			<div className="search-panel">
 				<SearchPanel onUpdateSearchProps={onUpdateSearch}></SearchPanel>
 				<AppFilter filter={filter} onFilterSelect={onFilterSelect}></AppFilter>
 			</div>
-
 			<EmployeesList
 				data={visibleData}
 				onDelete={(id: number) => deleteItem(id)}
@@ -101,6 +100,7 @@ function App() {
 				onToggleRise={onToggleRise}
 			/>
 			<EmployeesAddForm onAdd={addItem}></EmployeesAddForm>
+			<Chart dataChart={data}></Chart>
 		</div>
 	);
 }
