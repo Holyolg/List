@@ -1,6 +1,6 @@
 import { ArcElement, Chart as ChartJS, Legend, Tooltip } from "chart.js";
 import { Doughnut } from "react-chartjs-2";
-import "./chart.css";
+import "./chart.scss";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
@@ -48,7 +48,9 @@ const Chart = ({ dataChart }: { dataChart: IData[] }) => {
 	return (
 		<div className="chartModule">
 			<p className="chartName">Статистика по сотрудникам</p>
-			<Doughnut className="doughnut" data={data} />;
+			<div className="doughnut_wrapper">
+			<Doughnut className="doughnut" data={data} />
+			</div>
 		</div>
 	);
 };

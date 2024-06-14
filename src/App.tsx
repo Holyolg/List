@@ -1,6 +1,6 @@
 import { useState } from "react";
-import "./App.css";
-import Chart from "./components/Chart/chart";
+import "./App.scss";
+import Chart from "./components/сhart/chart";
 import AppFilter from "./components/app-filter/app-filter";
 import AppInfo from "./components/app-info/app-info";
 import EmployeesAddForm from "./components/employees-add-form/employees-add-form";
