@@ -13,7 +13,7 @@ const AppFilter = ({
 			label: "Все сотрудники",
 		},
 		{
-			name: "increase",
+			name: "like",
 			label: "На повышение",
 		},
 		{

@@ -1,11 +1,11 @@
 import { useState } from "react";
 import "./App.scss";
-import Chart from "./components/сhart/chart";
 import AppFilter from "./components/app-filter/app-filter";
 import AppInfo from "./components/app-info/app-info";
 import EmployeesAddForm from "./components/employees-add-form/employees-add-form";
 import EmployeesList from "./components/employees-list/employees-list";
 import SearchPanel from "./components/search-panel/search-panel";
+import Chart from "./components/сhart/chart";
 
 interface IData {
 	name: string;
@@ -71,8 +71,8 @@ function App() {
 
 	const filterPost = (items: IData[], filter: string) => {
 		switch (filter) {
-			case "increase":
-				return items.filter(item => item.increase == true);
+			case "like":
+				return items.filter(item => item.like == true);
 			case "more1000":
 				return items.filter(item => item.salary > 1000);
 			default:

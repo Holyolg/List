@@ -1,9 +1,13 @@
 .chartModule {
-	margin-top: 5vh;
+	margin-top: 30px;
 }
 .chartName {
+	padding: 25px;
+	background-color: #333333;
 	line-height: 35px;
 	font-size: 1.75rem;
+	color: white;
+	font-weight: 600;
 }
 
 .doughnut_wrapper {
@@ -12,5 +16,5 @@
 }
 
 .doughnut {
-	margin-top: 5vh;
+	margin: 30px auto 0 auto;
 }
