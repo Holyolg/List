@@ -29,7 +29,7 @@ const EmployeesAddForm = ({ onAdd }: any) => {
 		<div className="app-add-form">
 			<h3>Добавьте нового сотрудника</h3>
 			<form
-				className="add-form d-flex"
+				className="add-form"
 				onSubmit={e => {
 					e.preventDefault();
 					onSubmit();
